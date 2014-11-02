@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PushPin</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+    <div class="container">
+      <h1>PUSHPIN</h1>
+      <h3 class="hidden-content">Your pin has been added! Leave a comment below!</h3>
+      <div class="map">
+        <img class="spinner" src="spinner.gif" />
+      </div>
+      <div class="tooltip">
+      </div>
+      <div class="comments hidden-content">
+        <div class="new-comment">
+          <h2>COMMENT</h2>
+          <form name="comment" action="/comments" method="POST">
+            <div class="errors">Oops, try again.</div>
+            <input type="text" name="comment[author]" placeholder="Name">
+            <input type="text" name="comment[text]" placeholder="Comment">
+            <input type="hidden" name="comment[county_id]">
+            <input type="submit" value="Submit">
+          </form>
+          <div class="success">Your comment has been added!</div>
+        </div>
+      </div>
+    </div>
+  <body>
+
+  </body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+</html>

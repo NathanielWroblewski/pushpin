@@ -1,0 +1,144 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #FCFAF8;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.container {
+  width: 1000px;
+  padding-left: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+  text-align: center;
+  font-size: 3.875rem;
+}
+
+h3 {
+  color: #aaa;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+}
+
+.spinner {
+  margin: 0 auto;
+  display: block;
+}
+
+.counties {
+  fill: #FCFAF8;
+  stroke: #FCFAF8;
+}
+
+.states {
+  fill: none;
+  stroke: #FCFAF8;
+  stroke-linejoin: round;
+}
+
+.q0-9 { fill:rgb(135,211,124); }
+.q1-9 { fill:rgb(46,204,113); }
+.q2-9 { fill:rgb(0,177,106); }
+.q3-9 { fill:rgb(38,194,129); }
+.q4-9 { fill:rgb(3,166,120); }
+.q5-9 { fill:rgb(1,152,117); }
+.q6-9 { fill:rgb(22,160,133); }
+.q7-9 { fill:rgb(27,163,157); }
+.q8-9 { fill:rgb(30,130,76); }
+
+input {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #FCFAF8;
+  border: 1px solid #aaa;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+input[type=submit] {
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #444;
+  color: white;
+}
+
+.new-comment h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+  text-align: center;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  font-family: 'Libre Baskerville', serif;
+  color: #444;
+  background-color: #FCFAF8;
+  border: 3px solid #444;
+}
+
+.tooltip:after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: 0px;
+  width: 0;
+  border-top: 10px solid #444;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+.tooltip .author {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: normal;
+  line-height: 1em;
+  color: #aaa;
+  font-size: 0.7rem;
+}
+
+.tooltip .text {
+  color: #444;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.errors {
+  display: none;
+  color: #444;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.success {
+  display: none;
+  color: #444;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 75px;
+}
